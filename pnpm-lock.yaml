@@ -36,11 +36,13 @@ importers:
 
   packages/utils: {}
 
+  packages/vue3-waterfall: {}
+
   packages/waterfall: {}
 
   play:
     dependencies:
-      '@vue3-waterfall/components':
+      '@waterfall-plus/components':
         specifier: workspace:^
         version: link:../packages/components
     devDependencies:

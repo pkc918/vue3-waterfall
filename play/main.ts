@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import App from "./app.vue";
-import WaterFall from "@waterfall-plus/components";
+import { WaterFall, WaterFallItem } from "@waterfall-plus/components";
 const app = createApp(App);
-app.use(WaterFall);
+app.use(WaterFall).use(WaterFallItem);
 app.mount("#app");

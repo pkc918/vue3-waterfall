@@ -1,5 +1,5 @@
 {
-  "name": "vue3-waterfall",
+  "name": "waterfall-vue3",
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "es/index.mjs",

@@ -1,0 +1,27 @@
+{
+  "name": "vue3-waterfall",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "vue3-waterfall",
+    "waterfall",
+    "瀑布流",
+    "瀑布流组件"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "pkc918",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkc918/vue3-waterfall"
+  }
+}

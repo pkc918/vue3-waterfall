@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm run --filter ./play dev",
     "build:components": "pnpm run --filter @waterfall-plus/components build",
     "publish:npm": "pnpm run --filter @waterfall-plus/vue3-waterfall publish:npm"
   },

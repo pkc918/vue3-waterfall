@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { WaterFall } from "@vue3-waterfall/components";
+import { WaterFall } from "@waterfall-plus/components";
+
+WaterFall;
 </script>
 
 <template>

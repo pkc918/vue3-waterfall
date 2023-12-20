@@ -3,13 +3,45 @@ import { WaterFall, WaterFallItem } from "@waterfall-plus/components";
 </script>
 
 <template>
-  <div>
-    <WaterFall width="100%">
-      <WaterFallItem :width="200" class="item" :class="`item-${item % 22}`" v-for="item in 44" :key="item">
-        {{ item }}
-      </WaterFallItem>
-    </WaterFall>
-  </div>
+  <WaterFall width="100%">
+    <WaterFallItem
+      :width="200"
+      class="item"
+      :class="`item-${item % 22}`"
+      v-for="item in 88"
+      :key="item"
+    >
+      {{ item }}
+    </WaterFallItem>
+    <WaterFallItem :width="200" :height="200" class="item">
+      <img
+        style="width: 100%"
+        src="https://p26-passport.byteacctimg.com/img/user-avatar/65aae4fcc914b67b83f82d84d5a056db~90x90.awebp"
+        alt=""
+      />
+    </WaterFallItem>
+    <WaterFallItem :width="200" :height="200" class="item">
+      <img
+        style="width: 100%"
+        src="https://avatars.githubusercontent.com/u/58922004?v=4"
+        alt=""
+      />
+    </WaterFallItem>
+    <WaterFallItem :width="200" :height="125" class="item">
+      <img
+        style="width: 100%"
+        src="https://www.10wallpaper.com/wallpaper/medium/2312/Tradition_Lantern_Street_View_Tokyo_Japan_5K_medium.jpg"
+        alt=""
+      />
+    </WaterFallItem>
+    <WaterFallItem :width="200" :height="360" class="item">
+      <img
+        style="width: 100%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBKD95au_2m0_wc2Xc9gcTqvN4d5v4uCdKMg&usqp=CAU"
+        alt=""
+      />
+    </WaterFallItem>
+  </WaterFall>
 </template>
 
 <style scoped lang="less">

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-
 import { computed } from "vue";
 
 type WidthType = string | number;
 interface WaterfallProps {
   width: WidthType;
+  height: number;
 }
 const props = withDefaults(defineProps<WaterfallProps>(), {
   width: "20%",
@@ -23,16 +23,20 @@ const waterfallItemWidth = computed(() => {
 </script>
 
 <template>
-<div class="waterfall-item" :style="{width: waterfallItemWidth}">
-  <slot/>
-</div>
+  <div
+    class="waterfall-item"
+    :style="{ width: waterfallItemWidth, height: `${props.height}px` }"
+  >
+    <slot />
+  </div>
 </template>
 
 <style scoped lang="less">
-.waterfall-item{
+.waterfall-item {
   position: absolute;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
-<style scoped lang="less">
-
-</style>
+<style scoped lang="less"></style>
